@@ -1,19 +1,29 @@
+
 public class main_tp2_ex1 {
     public static void main(String[] args) {
         Compteur compteur = new Compteur();
-        int nombre = 0;
-        System.out.println(nombre);
+        System.out.println(compteur.getVal());
 
         for (int i = 0; i < 10; i++) {
-            nombre = compteur.incrementer();
+           compteur.incrementer();
 
         }
-        System.out.println(nombre);
+        System.out.println(compteur.getVal());
 
-        for (int i = 0; i < 20;i++){
-            nombre = compteur.decrementer();
+        for (int i = 0; i < 20; i++) {
+           compteur.decrementer();
 
         }
-        System.out.println(nombre);
+        System.out.println(compteur.getVal());
+
+        // compteur borne
+        CompteurBorne compteurb = new CompteurBorne(20);
+
+        for (int i = 0; i < 40; i++) {
+           compteurb.incrementer();
+            System.out.println(compteurb.getVal());
+
+        }
+
     }
 }

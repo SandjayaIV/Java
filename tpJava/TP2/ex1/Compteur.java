@@ -1,16 +1,21 @@
-public class Compteur{
+public class Compteur {
     private int i;
-    Compteur(){
+
+    Compteur() {
         i = 0;
     }
-    public int incrementer(){
+
+    public void incrementer() {
         i++;
-        return i;
     }
-    public int decrementer(){
-        while(i>0){
+
+    public void decrementer() {
+        while (i > 0) {
             i--;
-        }        
+        }
+
+    }
+    public int getVal(){
         return i;
     }
 
