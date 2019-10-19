@@ -5,4 +5,5 @@ public class Propagation {
         int r = a/b;
         return r;
     }
+
 }
